@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         blueSlider.value = 1
         blueSlider.minimumValue = 1
         blueSlider.maximumValue = 255
+        alphaSlider.value = 1
         // Do any additional setup after loading the view.
     }
 
