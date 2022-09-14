@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var redValueLabel: UILabel!
     @IBOutlet weak var greenValueLabel: UILabel!
     @IBOutlet weak var blueValueLabel: UILabel!
+    @IBOutlet weak var alphaValueLabel: UILabel!
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var alphaSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +39,20 @@ class ViewController: UIViewController {
 
     @IBAction func redSlider(_ sender: UISlider) {
         redValueLabel.text = String(format: "%.2f", redSlider.value)
-        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
+        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: CGFloat(alphaSlider.value))
     }
     @IBAction func greenSlider(_ sender: UISlider) {
         greenValueLabel.text = String(format: "%.2f", greenSlider.value)
-        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
+        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: CGFloat(alphaSlider.value))
     }
     @IBAction func blueSlider(_ sender: UISlider) {
         blueValueLabel.text = String(format: "%.2f", blueSlider.value)
-        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
+        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: CGFloat(alphaSlider.value))
     }
-    
+    @IBAction func alphaSlider(_ sender: UISlider) {
+        alphaValueLabel.text = String(format: "%.2f", alphaSlider.value)
+        colorLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: CGFloat(alphaSlider.value))
+    }
     
 }
 
