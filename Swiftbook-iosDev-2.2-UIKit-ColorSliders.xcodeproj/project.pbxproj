@@ -13,6 +13,7 @@
 		7E26AFF128D20B5F000C7B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E26AFEF28D20B5F000C7B44 /* Main.storyboard */; };
 		7E26AFF328D20B61000C7B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E26AFF228D20B61000C7B44 /* Assets.xcassets */; };
 		7E26AFF628D20B61000C7B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E26AFF428D20B61000C7B44 /* LaunchScreen.storyboard */; };
+		7E26B01E28D2350D000C7B44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E26B01D28D2350D000C7B44 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E26AFF228D20B61000C7B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E26AFF528D20B61000C7B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E26AFF728D20B61000C7B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E26B01D28D2350D000C7B44 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7E26AFF228D20B61000C7B44 /* Assets.xcassets */,
 				7E26AFF428D20B61000C7B44 /* LaunchScreen.storyboard */,
 				7E26AFF728D20B61000C7B44 /* Info.plist */,
+				7E26B01D28D2350D000C7B44 /* Extensions.swift */,
 			);
 			path = "Swiftbook-iosDev-2.2-UIKit-ColorSliders";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				7E26AFEE28D20B5F000C7B44 /* ViewController.swift in Sources */,
 				7E26AFEA28D20B5F000C7B44 /* AppDelegate.swift in Sources */,
 				7E26AFEC28D20B5F000C7B44 /* SceneDelegate.swift in Sources */,
+				7E26B01E28D2350D000C7B44 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
