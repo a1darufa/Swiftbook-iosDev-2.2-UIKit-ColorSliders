@@ -51,13 +51,17 @@ class SetColorVC: UIViewController {
         
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
-        alphaSlider.minimumTrackTintColor = .white
         
         setParameters(for: redSlider, greenSlider, blueSlider, alphaSlider, min: 0, max: 255)
         setColor()
         setValue(for: redValueLabel, greenValueLabel, blueValueLabel)
         setValue(for: redTextField, greenTextField, blueTextField, alphaTextField)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
 //    redTextField.addTarget(self, action: #selector(SetColorVC.textFieldDidChange(), for: .editingChanged)
